@@ -39,7 +39,7 @@ const Noei = () => {
               { image: "/img/noeifav3.png", text: "Cute animal" },
               { image: "/img/noeifav4.png", text: "Relaxation time" },
               { image: "/img/noeifav5.png", text: "Shopping" },
-              { image: "/img/noeifav6.png", text: "Listening to music" }
+              { image: "/img/noeifav6.png", text: "Music" }
             ].map((item, index) => (
               <motion.div
                 key={index}
