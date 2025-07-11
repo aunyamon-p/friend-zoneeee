@@ -9,9 +9,9 @@ const Index = () => {
     {
       name: "Noei",
       path: "/noei",
-      emoji: "🌸",
+      emoji: "🧈",
       color: "bg-pink-400",
-      description: "Sweet and bubbly personality",
+      description: "TN Frontend Vibe Noei",
       gradientClass: "gradient-bg-1"
     },
     {
