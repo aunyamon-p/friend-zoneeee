@@ -24,7 +24,7 @@ const Index = () => {
     {
       name: "Aomjai",
       path: "/aomjai",
-      emoji: "☀️",
+      emoji: "´ސު｀",
       color: "bg-yellow-400",
       description: "Bright and cheerful spirit",
       gradientClass: "gradient-bg-3"
