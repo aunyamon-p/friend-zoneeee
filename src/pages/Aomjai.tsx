@@ -5,7 +5,7 @@ import { Sun, Smile, Zap, Coffee } from 'lucide-react';
 
 const Aomjai = () => {
   return (
-    <ProfileLayout name="Aomjai" emoji="☀️" gradientClass="gradient-bg-3">
+    <ProfileLayout name="Aomjai" emoji="´ސު｀" gradientClass="gradient-bg-3">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         
         <ContentSection title="Sunshine Personality" className="lg:col-span-2">
