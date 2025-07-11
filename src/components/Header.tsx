@@ -9,7 +9,7 @@ const Header = () => {
         <Link to="/" className="flex items-center justify-center gap-3 hover:scale-105 transition-transform duration-300">
           <Users className="h-8 w-8 text-pink-500" />
           <h1 className="text-3xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-            Friend Zone
+            Friend Zone | Vibe-Coding Team
           </h1>
           <Heart className="h-6 w-6 text-red-400 animate-pulse" />
         </Link>

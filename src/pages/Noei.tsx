@@ -12,7 +12,7 @@ const Noei = () => {
         <ContentSection title="About Me" className="lg:col-span-2">
           <div className="flex items-center gap-4 mb-4">
             <div className="w-16 h-16 bg-pink-200 rounded-full flex items-center justify-center text-2xl shadow-md">
-              <img src="/img/noeiprofile.png" alt="Noei Profile" className="w-full h-full object-cover rounded-full" />
+              <img src="/img/noeiprofile.jpg" alt="Noei Profile" className="w-full h-full object-cover rounded-full" />
             </div>
             <div>
               <h3 className="text-xl font-semibold text-pink-600">
@@ -31,21 +31,21 @@ const Noei = () => {
 
         {/* Favorite Things */}
         <ContentSection title="My Favorite Things">
-          <div className="space-y-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
             {[
-              { icon: "🌿", text: "Natural places and things" },
-              { icon: "📸", text: "Photography & Arts" },
-              { icon: "🐶", text: "Cute animal" },
-              { icon: "☕", text: "Relaxation time" },
-              { icon: "🎀", text: "Shopping for cute accessories & fashion" },
-              { icon: "🎵", text: "Listening to music" }
+              { image: "/img/noeifav1.png", text: "Natural" },
+              { image: "/img/noeifav2.png", text: "Arts" },
+              { image: "/img/noeifav3.png", text: "Cute animal" },
+              { image: "/img/noeifav4.png", text: "Relaxation time" },
+              { image: "/img/noeifav5.png", text: "Shopping" },
+              { image: "/img/noeifav6.png", text: "Listening to music" }
             ].map((item, index) => (
               <motion.div
                 key={index}
-                className="flex items-center gap-3 p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors duration-300"
+                className="flex flex-col items-center gap-3 p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors duration-300"
                 whileHover={{ scale: 1.03 }}
               >
-                <span className="text-2xl">{item.icon}</span>
+                <img src={item.image} className="w-20 h-20 rounded-md"></img>
                 <span className="text-gray-700">{item.text}</span>
               </motion.div>
             ))}
@@ -54,7 +54,7 @@ const Noei = () => {
 
         {/* Mood Board */}
         <ContentSection title="My Mood Board">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 -44">
             {[
               { icon: <Sparkles className="h-8 w-8 text-red-500 mx-auto mb-2" />, label: "Positive Vibes" },
               { icon: <Heart className="h-8 w-8 text-red-500 mx-auto mb-2" />, label: "Love & Kindness" },
@@ -78,13 +78,13 @@ const Noei = () => {
         {/* Quote */}
         <ContentSection title="Quote of the Day" className="lg:col-span-2 ">
           <motion.div
-            className="bg-white/30 backdrop-blur-md rounded-xl p-6 border-l-4 border-pink-400 shadow"
+            className="bg-white/30 backdrop-blur-md bg-gradient-to-r from-pink-100 to-rose-100 rounded-xl p-6 border-l-4 border-pink-400 shadow"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <div className='flex'>
-              <img src="/img/quotenoei.jpg" className='w-20 h-20 rounded-md mr-10'></img>
+              <img src="/img/noeiprofile.jpg" className='w-20 h-20 rounded-md mr-10 '></img>
               <div className='flex flex-col justify-between'>
                 <blockquote className="text-lg italic text-gray-700 mb-2">
                   "Don't waste energy on what you can't control — focus on what you can"

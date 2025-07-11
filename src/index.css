@@ -87,3 +87,9 @@ All colors MUST be HSL.
 .animate-pulse-soft {
   animation: pulse-soft 3s ease-in-out infinite;
 }
+
+@layer utilities {
+  .animate-gradient {
+    background-size: 400% 400%;
+  }
+}
