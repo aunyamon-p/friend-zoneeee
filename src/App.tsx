@@ -11,6 +11,7 @@ import Aomjai from "./pages/Aomjai";
 import Ice from "./pages/Ice";
 import Auto from "./pages/Auto";
 import Ton from "./pages/Ton";
+import Fai from "./pages/Fai";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/ice" element={<Ice />} />
           <Route path="/auto" element={<Auto />} />
           <Route path="/ton" element={<Ton />} />
+          <Route path="/fai" element={<Fai />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

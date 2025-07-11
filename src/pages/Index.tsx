@@ -53,6 +53,14 @@ const Index = () => {
       color: "bg-purple-400",
       description: "Music lover and dreamer",
       gradientClass: "gradient-bg-6"
+    },
+    {
+      name: "Fai",
+      path: "/fai",
+      emoji: "🔥",
+      color: "bg-orange-400",
+      description: "Fiery and passionate spirit",
+      gradientClass: "gradient-bg-7"
     }
   ];
 
@@ -84,7 +92,7 @@ const Index = () => {
         {/* Fun stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
           <div className="text-center p-4 bg-white/60 rounded-xl backdrop-blur-sm">
-            <div className="text-3xl font-bold text-pink-500">6</div>
+            <div className="text-3xl font-bold text-pink-500">7</div>
             <div className="text-sm text-gray-600">Amazing Friends</div>
           </div>
           <div className="text-center p-4 bg-white/60 rounded-xl backdrop-blur-sm">
